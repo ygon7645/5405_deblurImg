@@ -40,7 +40,7 @@ def deblur(image_path):
         img = generated[i, :, :, :]
         output = np.concatenate((x, img), axis=1)
         im = Image.fromarray(output.astype(np.uint8))
-        im.save("/content/5405_deblurImg/result.png")#('deblur'+image_path)
+        im.save("result.jpg")#('deblur'+image_path)
 
 
 @click.command()
